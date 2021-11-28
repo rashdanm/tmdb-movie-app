@@ -8,7 +8,7 @@ import {
 } from "../styles/Header.styled";
 import { FaScroll, FaSearch, FaTimes } from "react-icons/fa";
 import Search from "./Search";
-import GenreList from "../styles/GenreList";
+import GenreList from "./GenreList";
 
 const Header = () => {
   const [click, setClick] = useState(false);
