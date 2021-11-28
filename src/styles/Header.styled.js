@@ -20,6 +20,7 @@ export const StyledHeader = styled.div`
 export const Logo = styled.div`
   font-size: 2rem;
   font-weight: 900;
+  z-index: 900;
 `;
 
 export const Icon = styled.div`
@@ -42,12 +43,16 @@ export const SearchNav = styled.div`
   height: 100vh;
   padding-top: 50px;
   background: transparent;
-  background-image: linear-gradient(to right, black, transparent);
+  background: linear-gradient(265deg, transparent 0%, #020b18 58%);
   overflow-x: auto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 
   &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -63,5 +68,8 @@ export const GenreNav = styled.div`
   background: transparent;
   background-image: linear-gradient(to left, black, transparent);
   overflow-x: auto;
-  transition: transform 0.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;

@@ -38,8 +38,9 @@ export const SearchNav = styled.div`
   left: 0;
   height: 100vh;
   width: 100vw;
+  padding-top: 50px;
   background: transparent;
-  background-image: linear-gradient(to right, black, transparent);
+  background: linear-gradient(265deg, transparent 0%, #020b18 58%);
   overflow-x: auto;
   transition: transform 0.5s ease-in-out;
 
@@ -47,6 +48,9 @@ export const SearchNav = styled.div`
   scrollbar-width: none; /* Firefox */
 
   &::-webkit-scrollbar {
+    display: none;
+  }
+  @media (min-width: 768px) {
     display: none;
   }
 `;
@@ -63,4 +67,8 @@ export const GenreNav = styled.div`
   background-image: linear-gradient(to left, black, transparent);
   overflow-x: auto;
   transition: transform 0.5s ease-in-out;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
