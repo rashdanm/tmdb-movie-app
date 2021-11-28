@@ -1,5 +1,5 @@
-import Movie from "./Movie";
 import { useState, useEffect } from "react";
+import Movie from "./Movie";
 import axios from "axios";
 import { StyledMovieList, Row } from "../styles/MovieList.styled";
 

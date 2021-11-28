@@ -12,6 +12,7 @@ export const StyledHeader = styled.div`
   padding-bottom: 3rem;
   padding-left: 5vw;
   padding-right: 5vw;
+  z-index: 700;
   @media (max-width: 768px) {
     justify-content: center;
   }
@@ -20,7 +21,7 @@ export const StyledHeader = styled.div`
 export const Logo = styled.div`
   font-size: 2rem;
   font-weight: 900;
-  z-index: 900;
+  z-index: 999;
 `;
 
 export const Icon = styled.div`
@@ -60,7 +61,7 @@ export const SearchNav = styled.div`
 export const GenreNav = styled.div`
   position: fixed;
   padding-right: 5vw;
-  z-index: 800;
+  z-index: 100;
   top: 0;
   right: 0;
   width: 100vw;
@@ -68,7 +69,8 @@ export const GenreNav = styled.div`
   background: transparent;
   background-image: linear-gradient(to left, black, transparent);
   overflow-x: auto;
-
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   @media (max-width: 768px) {
     display: none;
   }

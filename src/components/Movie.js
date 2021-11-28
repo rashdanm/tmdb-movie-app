@@ -5,7 +5,9 @@ const Movie = ({ image, rating, title, release_date }) => {
   return (
     <StyledMovie>
       <div>
-        <img src={`${IMG_URL}${image}`} />
+        <img
+          src={image ? IMG_URL + image : require("../assets/movie.jpg").default}
+        />
         <div>
           <div>{title}</div>
           <h4>{rating}</h4>
