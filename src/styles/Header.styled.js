@@ -26,6 +26,13 @@ export const SearchNav = styled.div`
   background-color: black;
   overflow-x: auto;
   transition: transform 0.5s ease-in-out;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const GenreNav = styled.div`

@@ -3,6 +3,7 @@ import GlobalStyles from "./styles/Global";
 import Header from "./components/Header";
 import movieRequests from "./utils/movieRequests";
 import MovieList from "./components/MovieList";
+import BottomNav from "./components/BottomNav";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           </div>
         ))}
       </div>
+      <BottomNav />
     </StyledMainWrapper>
   );
 }

@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StyledSearch = styled.div`
   padding-top: 8rem;
+  display: flex;
+  justify-content: center;
 
   input {
     position: fixed;

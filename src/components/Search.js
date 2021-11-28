@@ -44,7 +44,7 @@ const Search = () => {
         </form>
       </Top>
       <div>
-        <h1>Results for {searchText}</h1>
+        <div>{searchText}</div>
         {movies.map((movie) => (
           <Movie
             heading="Featured"

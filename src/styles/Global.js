@@ -13,9 +13,13 @@ body {
     background: #020b18;
     font-family: 'Jura', sans-serif;
     color: #fff;
-    
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
+.active {
+    color: red;
+}
 `;
 
 export default GlobalStyles;
