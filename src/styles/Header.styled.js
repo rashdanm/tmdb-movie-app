@@ -19,6 +19,7 @@ export const StyledHeader = styled.div`
 `;
 
 export const Logo = styled.div`
+  display: fixed;
   font-size: 2rem;
   font-weight: 900;
   z-index: 999;
@@ -37,7 +38,7 @@ export const Icon = styled.div`
 export const SearchNav = styled.div`
   position: fixed;
 
-  z-index: 800;
+  z-index: 700;
   top: 0;
   left: 0;
   width: 100vw;
@@ -67,7 +68,7 @@ export const GenreNav = styled.div`
   width: 100vw;
   height: 100vh;
   background: transparent;
-  background-image: linear-gradient(to left, black, transparent);
+  background: linear-gradient(90deg, transparent 0%, #020b18 80%);
   overflow-x: auto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

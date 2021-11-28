@@ -15,6 +15,9 @@ body {
     color: #fff;
     overflow-y: auto;
     scrollbar-width: none;
+    overflow-x: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 img {

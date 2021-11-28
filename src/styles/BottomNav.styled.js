@@ -33,7 +33,7 @@ export const Icon = styled.div`
 
 export const SearchNav = styled.div`
   position: fixed;
-  z-index: 800;
+  z-index: 700;
   top: 0;
   left: 0;
   height: 100vh;
@@ -64,9 +64,11 @@ export const GenreNav = styled.div`
   height: 100vh;
   padding-right: 5vw;
   background: transparent;
-  background-image: linear-gradient(to left, black, transparent);
-  overflow-x: auto;
+  background-image: linear-gradient(to left, #020b18, transparent);
   transition: transform 0.5s ease-in-out;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 
   @media (min-width: 768px) {
     display: none;

@@ -10,7 +10,7 @@ export const StyledSearch = styled.div`
 export const Top = styled.div`
   background: transparent;
   background: linear-gradient(0deg, transparent 0%, #020b18 35%);
-
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;

@@ -1,11 +1,12 @@
 import movieRequests from "../utils/movieRequests";
 import tvRequests from "../utils/tvRequests";
 import { Link } from "react-scroll";
-import { StyledGenreList } from "../styles/GenreList.styled";
+import { StyledGenreList, Fade } from "../styles/GenreList.styled";
 
 const GenreList = () => {
   return (
     <StyledGenreList>
+      <Fade />
       <section>
         <h2>Movies</h2>
         {movieRequests.map((item) => (
