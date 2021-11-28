@@ -21,6 +21,7 @@ export const StyledBottomNav = styled.div`
 
 export const Icon = styled.div`
   cursor: pointer;
+  font-size: 1.2rem;
   .icon {
     fill: white;
   }
@@ -35,9 +36,10 @@ export const SearchNav = styled.div`
   z-index: 800;
   top: 0;
   left: 0;
-  width: 70%;
   height: 100vh;
-  background-color: black;
+  width: 100vw;
+  background: transparent;
+  background-image: linear-gradient(to right, black, transparent);
   overflow-x: auto;
   transition: transform 0.5s ease-in-out;
 
@@ -54,9 +56,11 @@ export const GenreNav = styled.div`
   z-index: 800;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 100vw;
   height: 100vh;
-  background-color: black;
+  padding-right: 5vw;
+  background: transparent;
+  background-image: linear-gradient(to left, black, transparent);
   overflow-x: auto;
   transition: transform 0.5s ease-in-out;
 `;

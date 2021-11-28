@@ -1,9 +1,10 @@
 import movieRequests from "../utils/movieRequests";
 import { Link } from "react-scroll";
+import { StyledGenreList } from "../styles/GenreList.styled";
 
 const GenreList = () => {
   return (
-    <div>
+    <StyledGenreList>
       <section>
         <h2>Movies</h2>
         {movieRequests.map((item) => (
@@ -21,7 +22,7 @@ const GenreList = () => {
           </div>
         ))}
       </section>
-    </div>
+    </StyledGenreList>
   );
 };
 

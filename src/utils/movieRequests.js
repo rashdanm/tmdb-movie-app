@@ -4,7 +4,7 @@ const movieRequests = [
   {
     id: 1,
     linkId: "movieTrending",
-    genre: "Trending",
+    genre: "Trending this week",
     url: `/trending/all/week?api_key=${API_KEY}&with_original_language`,
   },
   {

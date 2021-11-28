@@ -10,6 +10,8 @@ export const StyledHeader = styled.div`
   background-image: linear-gradient(360deg, transparent 2%, #020b18 30%);
   padding-top: 2rem;
   padding-bottom: 3rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
   @media (max-width: 768px) {
     justify-content: center;
   }
@@ -21,6 +23,8 @@ export const Logo = styled.div`
 `;
 
 export const Icon = styled.div`
+  cursor: pointer;
+  font-size: 1.2rem;
   color: white;
   z-index: 900;
   @media (max-width: 768px) {
@@ -30,12 +34,14 @@ export const Icon = styled.div`
 
 export const SearchNav = styled.div`
   position: fixed;
+  padding-left: 5vw;
   z-index: 800;
   top: 0;
   left: 0;
-  width: 300px;
+  width: 100vw;
   height: 100vh;
-  background-color: black;
+  background: transparent;
+  background-image: linear-gradient(to right, black, transparent);
   overflow-x: auto;
   transition: transform 0.5s ease-in-out;
 
@@ -49,12 +55,14 @@ export const SearchNav = styled.div`
 
 export const GenreNav = styled.div`
   position: fixed;
+  padding-right: 5vw;
   z-index: 800;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 100vw;
   height: 100vh;
-  background-color: black;
+  background: transparent;
+  background-image: linear-gradient(to left, black, transparent);
   overflow-x: auto;
   transition: transform 0.5s ease-in-out;
 `;

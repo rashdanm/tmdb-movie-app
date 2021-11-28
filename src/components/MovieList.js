@@ -30,6 +30,7 @@ const MovieList = ({ heading, fetchUrl }) => {
             alt={movie.title}
             overview={movie.overview}
             imageBg={movie.backdrop_path}
+            release_date={movie.release_date}
           />
         ))}
       </Row>
