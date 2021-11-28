@@ -16,7 +16,7 @@ export const Top = styled.div`
   left: 0;
   padding-top: 90px;
   padding-bottom: 50px;
-  width: 350px;
+  width: 100%;
   padding-left: 5vw;
   height: 200px;
 `;

@@ -17,6 +17,12 @@ body {
     scrollbar-width: none;
 }
 
+img {
+    width: 185px;
+    height: 278px;
+    border-radius: 4px;
+}
+
 a, a:visited, a:hover, a:active {
     color: white;
 }

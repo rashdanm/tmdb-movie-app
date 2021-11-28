@@ -27,9 +27,7 @@ const Header = () => {
   };
   return (
     <StyledHeader>
-      <Icon onClick={handleSearch}>
-        <FaSearch />
-      </Icon>
+      <Icon onClick={handleSearch}>{search ? <FaTimes /> : <FaSearch />}</Icon>
       {search && (
         <SearchNav>
           <Search />
@@ -37,9 +35,7 @@ const Header = () => {
       )}
 
       <Logo>selektMovie</Logo>
-      <Icon onClick={handleList}>
-        <FaScroll />
-      </Icon>
+      <Icon onClick={handleList}>{list ? <FaTimes /> : <FaScroll />}</Icon>
       {list && (
         <GenreNav>
           <GenreList />

@@ -1,14 +1,16 @@
-import { StyledMovie } from "../styles/Movie.styled";
+import { StyledMovie, Text } from "../styles/Movie.styled";
 
 const Movie = ({ image, rating, title, release_date }) => {
   const IMG_URL = "https://image.tmdb.org/t/p/w185";
   return (
     <StyledMovie>
-      <div className="movie">
+      <div>
         <img src={`${IMG_URL}${image}`} />
-        <div>{title}</div>
-        <div>{rating}</div>
-        <div>{release_date}</div>
+        <div>
+          <div>{title}</div>
+          <h4>{rating}</h4>
+          {/* <div>{release_date}</div> */}
+        </div>
       </div>
     </StyledMovie>
   );
