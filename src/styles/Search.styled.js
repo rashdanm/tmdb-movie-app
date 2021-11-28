@@ -3,19 +3,35 @@ import styled from "styled-components";
 export const StyledSearch = styled.div`
   padding-top: 8rem;
   display: flex;
-  justify-content: center;
-
-  input {
-    position: fixed;
-    width: 300px;
-  }
+  ${"" /* justify-content: center; */}
+  padding-left: 5vw;
 `;
 
 export const Top = styled.div`
-  background: yellow;
+  background: transparent;
+  background-image: linear-gradient(to right, black, transparent);
   position: fixed;
   top: 0;
-  padding-top: 100px;
+  left: 0;
+  padding-top: 90px;
   padding-bottom: 50px;
-  width: 300px;
+  width: 100%;
+  padding-left: 5vw;
 `;
+
+export const Input = styled.input`
+  position: fixed;
+  width: 300px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.4rem;
+  padding: 0.5rem 1.5rem;
+  text-align: left;
+  margin-bottom: 12vh;
+  padding-left: 5vw;
+`;
+
+export const Form = styled.form``;

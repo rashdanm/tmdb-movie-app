@@ -34,17 +34,16 @@ export const Icon = styled.div`
 
 export const SearchNav = styled.div`
   position: fixed;
-  padding-left: 5vw;
+
   z-index: 800;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding-top: 50px;
   background: transparent;
   background-image: linear-gradient(to right, black, transparent);
   overflow-x: auto;
-  transition: transform 0.5s ease-in-out;
-
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 

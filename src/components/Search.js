@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyledSearch, Top } from "../styles/Search.styled";
+import { StyledSearch, Top, Input, Form } from "../styles/Search.styled";
 import Movie from "./Movie";
 import axios from "axios";
 
@@ -34,17 +34,17 @@ const Search = () => {
   return (
     <StyledSearch>
       <Top>
-        <form onSubmit={handleOnSubmit}>
-          <input
+        <Form onSubmit={handleOnSubmit}>
+          <Input
             className="search"
             type="search"
             onChange={handleOnChange}
             value={search}
           />
-        </form>
+        </Form>
       </Top>
       <div>
-        <div>{searchText}</div>
+        {/* <div>{searchText}</div> */}
         {movies.map((movie) => (
           <Movie
             heading="Featured"
