@@ -17,6 +17,10 @@ body {
     scrollbar-width: none;
 }
 
+a, a:visited, a:hover, a:active {
+    color: white;
+}
+
 .active {
     color: red;
 }

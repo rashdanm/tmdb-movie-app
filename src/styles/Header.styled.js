@@ -6,14 +6,26 @@ export const StyledHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background: black;
+  background: transparent;
+  background-image: linear-gradient(360deg, transparent 2%, #020b18 30%);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
-export const Logo = styled.div``;
+export const Logo = styled.div`
+  font-size: 2rem;
+  font-weight: 900;
+`;
 
 export const Icon = styled.div`
   color: white;
   z-index: 900;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const SearchNav = styled.div`

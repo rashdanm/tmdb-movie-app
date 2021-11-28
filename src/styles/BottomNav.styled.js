@@ -29,3 +29,34 @@ export const Icon = styled.div`
     fill: green;
   }
 `;
+
+export const SearchNav = styled.div`
+  position: fixed;
+  z-index: 800;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: black;
+  overflow-x: auto;
+  transition: transform 0.5s ease-in-out;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const GenreNav = styled.div`
+  position: fixed;
+  z-index: 800;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: black;
+  overflow-x: auto;
+  transition: transform 0.5s ease-in-out;
+`;

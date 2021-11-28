@@ -15,9 +15,16 @@ const Header = () => {
   const [search, showSearch] = useState(false);
   const [list, showList] = useState(false);
   const handleClick = () => setClick(!click);
-  const handleSearch = () => showSearch(!search);
-  const handleList = () => showList(!list);
 
+  const handleSearch = () => {
+    showSearch(!search);
+    showList(false);
+  };
+
+  const handleList = () => {
+    showList(!list);
+    showSearch(false);
+  };
   return (
     <StyledHeader>
       <Icon onClick={handleSearch}>
@@ -29,7 +36,7 @@ const Header = () => {
         </SearchNav>
       )}
 
-      <Logo>SelektMovie</Logo>
+      <Logo>selektMovie</Logo>
       <Icon onClick={handleList}>
         <FaScroll />
       </Icon>
