@@ -57,6 +57,7 @@ export const SearchNav = styled.div`
 
 export const GenreNav = styled.div`
   position: fixed;
+  padding-bottom: 100px;
   z-index: 800;
   top: 0;
   right: 0;

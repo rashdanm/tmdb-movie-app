@@ -10,8 +10,8 @@ const movieRequests = [
   {
     id: 2,
     linkId: "movieTopRated",
-    genre: "Top Rated",
-    url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
+    genre: "Favourites",
+    url: `/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=1`,
   },
   {
     id: 3,
@@ -43,12 +43,12 @@ const movieRequests = [
     genre: "Crime",
     url: `/discover/movie?api_key=${API_KEY}&with_genres=80`,
   },
-  {
-    id: 8,
-    linkId: "movieDocumentary",
-    genre: "Documentary",
-    url: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
-  },
+  // {
+  //   id: 8,
+  //   linkId: "movieDocumentary",
+  //   genre: "Documentary",
+  //   url: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
+  // },
   {
     id: 9,
     linkId: "movieDrama",
