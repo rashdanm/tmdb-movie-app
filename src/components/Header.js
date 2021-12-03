@@ -6,15 +6,13 @@ import {
   SearchNav,
   GenreNav,
 } from "../styles/Header.styled";
-import { FaScroll, FaSearch, FaTimes } from "react-icons/fa";
+import { FaList, FaSearch, FaTimes } from "react-icons/fa";
 import Search from "./Search";
 import GenreList from "./GenreList";
 
 const Header = () => {
-  const [click, setClick] = useState(false);
   const [search, showSearch] = useState(false);
   const [list, showList] = useState(false);
-  const handleClick = () => setClick(!click);
 
   const handleSearch = () => {
     showSearch(!search);
@@ -35,7 +33,7 @@ const Header = () => {
       )}
 
       <Logo>selektMovie</Logo>
-      <Icon onClick={handleList}>{list ? <FaTimes /> : <FaScroll />}</Icon>
+      <Icon onClick={handleList}>{list ? <FaTimes /> : <FaList />}</Icon>
       {list && (
         <GenreNav>
           <GenreList />

@@ -1,4 +1,4 @@
-import { StyledMovie, Text } from "../styles/Movie.styled";
+import { StyledMovie } from "../styles/Movie.styled";
 
 const Movie = ({ image, rating, title, release_date }) => {
   const IMG_URL = "https://image.tmdb.org/t/p/w185";
@@ -6,6 +6,7 @@ const Movie = ({ image, rating, title, release_date }) => {
     <StyledMovie>
       <div>
         <img
+          alt=""
           src={image ? IMG_URL + image : require("../assets/movie.jpg").default}
         />
         <div>

@@ -5,7 +5,7 @@ import {
   SearchNav,
   GenreNav,
 } from "../styles/BottomNav.styled";
-import { FaScroll, FaSearch, FaHome, FaUser } from "react-icons/fa";
+import { FaList, FaSearch, FaHome, FaUser } from "react-icons/fa";
 import Search from "./Search";
 import GenreList from "./GenreList";
 
@@ -31,7 +31,7 @@ const BottomNav = () => {
     <div>
       <StyledBottomNav>
         <Icon onClick={handleList}>
-          <FaScroll />
+          <FaList />
         </Icon>
 
         <Icon onClick={handleSearch}>
@@ -39,9 +39,7 @@ const BottomNav = () => {
         </Icon>
 
         <Icon>
-          {/* <a href="/"> */}
           <FaHome onClick={home} />
-          {/* </a> */}
         </Icon>
 
         <Icon>
